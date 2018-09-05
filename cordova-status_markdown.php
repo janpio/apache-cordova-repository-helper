@@ -22,6 +22,10 @@ function output_repositories($repositories) {
 
 foreach($repositories as $group => $categories) 
 {	
+	if(str_replace("Deprecated", "", $group) != $group) {
+		continue;
+	}
+
 	echo "| ".$group." | Travis CI | AppVeyor | Code Coverage |
 | :--- | :---: | :---: | :---: |\n";
 
@@ -33,6 +37,10 @@ foreach($repositories as $group => $categories)
 	{
 		foreach($categories as $category => $repositories) 
 		{
+			if(str_replace("Deprecated", "", $category) != $category) {
+				continue;
+			}
+			
 			echo "| ".$category." |  |  |  |\n";
 			output_repositories($repositories);
 		}
