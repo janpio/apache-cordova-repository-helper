@@ -22,7 +22,7 @@ function output_repositories($repositories) {
 
 foreach($repositories as $group => $categories) 
 {	
-	if(str_replace("Deprecated", "", $group) != $group) {
+	if(str_replace("Deprecated", "", $group) != $group || str_replace("Organization", "", $group) != $group) {
 		continue;
 	}
 
