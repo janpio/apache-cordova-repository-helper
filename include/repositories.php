@@ -79,8 +79,7 @@ $repositories = [
 		]	
 	],
 	'Templates' => [
-		'apache/cordova-app-hello-world',
-		'apache/cordova-template-reference'
+		'apache/cordova-app-hello-world'
 	],
 	'Documentation and Website(s)' => [
 		'apache/cordova-docs',
@@ -103,7 +102,8 @@ $repositories = [
 		'apache/cordova-plugin-compat',
 		'apache/cordova-registry-web',
 		'apache/cordova-registry',
-		'apache/cordova-fauxton-server'
+		'apache/cordova-fauxton-server',
+		'apache/cordova-template-reference'
 	]
 ];
 ?>
