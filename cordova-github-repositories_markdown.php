@@ -21,15 +21,15 @@ foreach($repositories as $group => $categories)
 	echo "### ".$group."\n";
 
 	if(isset($categories[0])) {
-		$repositories = $categories;
-		output_repositories($repositories);
+		$_repositories = $categories;
+		output_repositories($_repositories);
 	}
 	else
 	{
-		foreach($categories as $category => $repositories) 
+		foreach($categories as $category => $_repositories) 
 		{
 			echo "#### ".$category."\n";
-			output_repositories($repositories);
+			output_repositories($_repositories);
 		}
 	}
 }

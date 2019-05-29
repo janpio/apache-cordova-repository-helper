@@ -26,19 +26,19 @@ foreach($repositories as $group => $categories)
 
 
 	if(isset($categories[0])) {
-		$repositories = $categories;
-		output_repositories($repositories);
+		$_repositories = $categories;
+		output_repositories($_repositories);
 	}
 	else
 	{
-		foreach($categories as $category => $repositories) 
+		foreach($categories as $category => $_repositories) 
 		{
 			if(str_replace("Deprecated", "", $category) != $category) {
 				continue;
 			}
 			
 			echo "##### ".$category."\n";
-			output_repositories($repositories);
+			output_repositories($_repositories);
 		}
 	}
 	echo "\n";
