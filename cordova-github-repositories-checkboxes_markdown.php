@@ -4,7 +4,7 @@ include("include/repositories.php");
 
 <h1>Grouped list of Cordova repositories on Github with checkboxes as Markdown</h1>
 
-<textarea style="width:100%; height:80%;">
+<textarea style="width:100%; height:50%;">
 <!-- This markdown was generated with http://cordova.betamo.de/cordova-github-repositories-checkboxes_markdown.php -->
 
 <?php
