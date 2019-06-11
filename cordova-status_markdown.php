@@ -13,7 +13,7 @@ function output_repositories($repositories) {
 	foreach($repositories as $repository) {
 		echo "| [".str_replace("apache/", "", $repository)."](https://github.com/".$repository.") ";
 		echo "| [![Build Status](https://travis-ci.org/".$repository.".svg?branch=master)](https://travis-ci.org/".$repository.") ";
-		echo "| ![Build status](https://ci.appveyor.com/api/projects/status/github/".$repository."?branch=master&svg=true) [#1](https://ci.appveyor.com/project/ApacheSoftwareFoundation/".str_replace("apache/", "", $repository)."/branch/master), [#2](https://ci.appveyor.com/project/Humbedooh/".str_replace("apache/", "", $repository)."/branch/master) ";
+		echo "| [![Build status](https://ci.appveyor.com/api/projects/status/github/".$repository."?branch=master&svg=true)](https://ci.appveyor.com/project/ApacheSoftwareFoundation/".str_replace("apache/", "", $repository)."/branch/master) ";
 		echo "| [![codecov.io](https://codecov.io/github/".$repository."/coverage.svg?branch=master)](https://codecov.io/github/".$repository."?branch=master) ";
 		echo "|\n";
 	}
